@@ -1,9 +1,16 @@
-import { NextPage } from "next";
+import { NextComponentType, NextPage } from "next";
 import Link from "next/link";
+import { ComponentProps, FunctionComponent } from "react";
 
-const Nav: NextPage = () => {
+
+type NavProps = {
+	props?: Record<string, any>;
+	className?: string;
+};
+
+const Nav: FunctionComponent<NavProps> = ({ className }) => {
 	return (
-		<nav>
+		<nav className={className}>
 			<ul
 				className="md:text-lg h-28 md:h-min md:w-72 flex flex-col md:flex-row items-center justify-between font-medium"
 			>

@@ -36,7 +36,24 @@ module.exports = {
       zIndex: {
         "-10": "-10",
       },
+      animation: {
+        "fly-in": "flyIn 0.5s ease-in-out forwards",
+      },
+      keyframes: {
+        "flyIn": {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(-30px)"
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0)"
+          }
+        }
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animation-delay"),
+  ],
 };

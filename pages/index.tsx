@@ -54,7 +54,7 @@ const Home: NextPage = () => {
       className="w-min mx-auto md:mb-8 p-6 flex flex-col justify-center items-center"
     >
       <h1
-        className="text-5xl md:text-8xl mb-8 md:mb-12 lg:text-8xl font-bold cursor-pointer select-none"
+        className="text-5xl md:text-8xl mb-8 md:mb-12 lg:text-8xl font-bold cursor-pointer select-none opacity-0 animate-fly-in animation-delay-100"
         id="name"
         onClick={newColor}
       >
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
           style={{ color: dotColor }}
         >.</span>
       </h1>
-      <Nav />
+      <Nav className="opacity-0 animate-fly-in animation-delay-300" />
     </div>
   );
 };
