@@ -1,0 +1,10 @@
+@media (prefers-color-scheme: dark) {
+  .shade {
+    stroke: #ffffff;
+    fill: #000000;
+  }
+  .lit {
+    stroke: #ffffff;
+    fill: #ffffff;
+  }
+}
